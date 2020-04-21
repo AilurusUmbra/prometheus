@@ -114,6 +114,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=all
     volumes:
       - prometheus_textfiles:/run/prometheus
+    restart: always
     # command: nvidia-smi
 
 volumes:
